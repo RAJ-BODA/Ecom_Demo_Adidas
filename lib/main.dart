@@ -1,3 +1,4 @@
+import 'package:ecom_adidas_demo/UI/BottomBar/bottom_bar_screen.dart';
 import 'package:ecom_adidas_demo/UI/product_details.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: ProductDetailsPage(),
+      home: BottomBarScreen(),
     );
   }
 }

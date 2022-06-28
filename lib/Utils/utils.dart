@@ -5,3 +5,6 @@ double baseHeight = 640.0;
 double screenAwareSize(double size, BuildContext context) {
   return size * MediaQuery.of(context).size.height / baseHeight;
 }
+
+double height = 804;
+double width = 393;

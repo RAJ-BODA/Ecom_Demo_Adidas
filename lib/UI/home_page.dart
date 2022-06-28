@@ -6,8 +6,8 @@ import '../Utils/utils.dart';
 import '../data.dart';
 import '../widgets/product_details_widgets.dart';
 
-class ProductDetailsPage extends StatelessWidget {
-  ProductDetailsPage({Key? key}) : super(key: key);
+class HomePage extends StatelessWidget {
+  HomePage({Key? key}) : super(key: key);
   final ProductDetailsController productDetailsController = Get.put(ProductDetailsController());
 
   @override
