@@ -7,7 +7,7 @@ import 'package:get/get.dart';
 import '../../controllers/bottom_bar_screen_controller.dart';
 
 class BottomBarScreen extends StatelessWidget {
-  BottomBarScreenController bottomBarScreenController = Get.put(BottomBarScreenController());
+  final bottomBarScreenController = Get.put(BottomBarScreenController());
 
   final allPage = [
     HomePage(),
@@ -47,7 +47,7 @@ class BottomBarScreen extends StatelessWidget {
                       height: 50,
                       margin: const EdgeInsets.fromLTRB(20, 0, 20, 20),
                       alignment: Alignment.center,
-                      decoration: BoxDecoration(color: primaryRed, borderRadius: BorderRadius.circular(100)),
+                      decoration: BoxDecoration(color: white, borderRadius: BorderRadius.circular(100)),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
@@ -107,7 +107,7 @@ class BottomBarScreen extends StatelessWidget {
           path,
           width: 33,
           height: 33,
-          color: bottomBarScreenController.pageIndex.value == i ? white : darkGray,
+          color: bottomBarScreenController.pageIndex.value == i ? primaryRed : darkGray,
           errorBuilder: (BuildContext context, Object exception, StackTrace? stackTrace) => const SizedBox(),
         ),
       ),
